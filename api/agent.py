@@ -9,7 +9,7 @@ client = OpenAI()
 
 def write_dataset_to_file(conversation_data: ConversationDataset, file_name: str):
     # Use the uuid from the vcon data to set the file name
-    output_file = f"datasets/{file_name}.json"
+    output_file = f"datasets/{file_name}"
 
     # Convert the conversation data to JSON and save to file
     with open(output_file, "w") as file:

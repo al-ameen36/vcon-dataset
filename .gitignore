@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 .env
 venv
-datasets/*
-uploads/*
+datasets
+uploads
+__pycache__

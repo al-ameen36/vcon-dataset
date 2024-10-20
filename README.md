@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+﻿
+﻿
+# VCon Datasets
+**Vcon-datasets** enables companies to create customized datasets from their unique interactions with users. This solution empowers organizations to derive insights directly from their conversations, enhancing their understanding of customer behavior and needs.  
+  
+In contrast to relying on publicly available data, which often leads AI models to learn about other businesses, **Vcon-datasets** allows companies to harness their own data for training. By collecting and curating user interaction data, organizations can develop AI models that are more relevant and effective, ultimately improving customer service and strategic decision-making.  
+  
+With **Vcon-datasets**, businesses can foster a data-driven culture and gain a competitive edge by leveraging insights specific to their operations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[https://drive.google.com/file/d/19p8vHNNk38EywLmGIi9XbxST-AuBNp3I/view?usp=sharing](https://drive.google.com/file/d/19p8vHNNk38EywLmGIi9XbxST-AuBNp3I/view?usp=sharing)  
 
-Currently, two official plugins are available:
+[https://youtu.be/eRRvHC9kayU](https://youtu.be/eRRvHC9kayU)  
+  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tools used
+1. VCons
+2. React JS
+3. FastAPI
 
-## Expanding the ESLint configuration
+## How to run Project
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+    git clone
+    
+    # Frontend
+    npm install
+    npm run dev
+    
+    # Backend
+    cd api/
+    python -m venv venv
+    pip install -r requirements.txt
+    fastapi dev main.py
+    
