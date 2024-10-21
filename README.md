@@ -18,9 +18,12 @@ With **Vcon-datasets**, businesses can foster a data-driven culture and gain a c
 3. FastAPI
 
 ## How to run Project
+You can run the project in two ways:
 
-    git clone
-    
+Firstly by running the `api/file_watcher.py` file and adding your VCons to `api/uploads/` while the script is running, which will automatically parsed each added file.
+
+or by running the app (frontend and backend)
+   
     # Frontend
     npm install
     npm run dev
